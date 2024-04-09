@@ -1,5 +1,139 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magee Technology | Software Engineering and Development</title>
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    <style>
+        .service-block { 
+            height: 290px;
+        }
 
-<p>test</p>
+        .service-block div { 
+            text-align: center;
+        }
 
-<h1>test123</h1>
+        div h6 { 
+            text-align: center;
+        }
+
+        .req { 
+            color: #FF0000;
+        }
+
+        #services, #about, #contact { 
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>MAGEE TECHNOLOGY</h3>
+        <nav>
+            <ul>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="
+        background-image: url(assets/sky_scrapers_1.gif);  
+        background-repeat: no-repeat; background-attachment: fixed;
+        background-size: cover; height: 400px;
+        margin-bottom: 25px;">
+        <div style="padding: 9px; text-align: center;">
+            <h2><mark>Remote software engineering, integration and development services</mark></h2>
+            <p><mark>Creating solutions that will survive the test of time</mark></p>
+            <a class="button" href="#contact">CONTACT</a>
+        </div>
+    </div>
+
+    <blockquote>
+        <p>Software is the language of automation.</p>
+        <p><cite>- Jensen Huang, CEO, Nvidia</cite></p>
+    </blockquote> 
+      
+    <div id="services">
+        <h6>FEATURED SERVICES</h6>
+        <h2>Full-stack software engineering and development, to meet your business's needs</h2>
+        <p>
+            Software solutions can provide businesses with efficient solutions for streamlining operations, 
+            increasing productivity, and optimizing decision-making processes.
+        </p>
+
+        <div>
+            <aside class="service-block">
+                <p><b>Services/Integrations</b></p>
+                <div>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/maintenance.png" alt="maintenance"/>
+                </div>
+                <p>Automation tools to move data from one place to another, automatic report generation.</p>
+            </aside>
+
+            <aside class="service-block">
+                <p><b>Back-end Webdev</b></p>
+                <div>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/server.png" alt="server"/>
+                </div>
+                <p>Web APIs that power webapps, mobile apps, and even desktop applications.</p>
+            </aside>
+
+            <aside class="service-block">
+                <p><b>Front-end Webdev</b></p>
+                <div>
+                    <img width="40" height="40" src="https://img.icons8.com/office/40/laptop.png" alt="laptop"/>
+                </div>
+                <p>Dynamic and usable user interfaces, allowing users to interact with applications with ease.</p>
+            </aside>
+        </div>
+    </div>
+
+    <div id="about">
+        <h6>ABOUT</h6>
+        <aside style="background-image: url(assets/allegheny_1.png);  
+            background-repeat: no-repeat;
+            background-position: center; height: 150px"></aside>
+        <p>
+            Headquartered online in the vibrant Northeast region of the United States, this technology 
+            company thrives on a commitment to consistency and communication. Maintaining open 
+            channels with clients is priority #1, ensuring transparency and alignment throughout every project phase. 
+            Dedication to these principles cultivates strong, lasting partnerships driving mutual success in the 
+            dynamic world of software development.
+        </p>
+    </div>
+
+    <div id="contact">
+        <h6>CONTACT</h6>
+        <form>
+                <p>
+                    <label>Name <span class="req">*</span></label>
+                    <input type="text" name="name" required="">
+                </p>
+
+                <p>
+                    <label>Company Name</label>
+                    <input type="text" name="company">
+                </p>
+
+                <p>
+                    <label>Email <span class="req">*</span></label>
+                    <input type="email" name="email" required="">
+                </p>
+
+                <p>
+                    <label>Message <span class="req">*</span></label>
+                    <textarea rows="6" required=""></textarea>
+                </p>
+
+                <button>Send</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024, Magee Technology LLC | Built with <a href="https://simplecss.org/" target="_blank">Simple.css</a>
+    </footer>
+</body>
+</html>
